@@ -34,6 +34,14 @@ describe("Bank", function() {
     expect(bank.getWithdrawals()).toEqual([100]);
   });
 
+  it("can display deposits and withdrawals together", function() {
+    bank.depositAmount(200);
+    bank.withdrawAmount(50);
+    expect(bank.showTransactions()).toEqual([200], [50]);
+  });
+
+
+
 
 
 });

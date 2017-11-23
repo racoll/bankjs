@@ -30,3 +30,8 @@ function Bank() {
   Bank.prototype.getWithdrawals = function() {
     return this.withdrawals;
   }
+
+  Bank.prototype.showTransactions = function() {
+    // take stored deposits and withdrawals and dislay
+    // together 
+  }
