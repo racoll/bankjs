@@ -28,6 +28,12 @@ describe("Bank", function() {
     expect(bank.getDeposits()).toEqual([200]);
   });
 
+  it("can store a record of a withdrawal", function() {
+    bank.depositAmount(200);
+    bank.withdrawAmount(100);
+    expect(bank.getWithdrawals()).toEqual([100]);
+  });
+
 
 
 });

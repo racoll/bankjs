@@ -4,6 +4,7 @@ function Bank() {
   this.INITIAL_BALANCE = 0;
   this.balance = this.INITIAL_BALANCE;
   this.deposits = [];
+  this.withdrawals = [];
 }
 
   Bank.prototype.getBalance = function() {
@@ -18,9 +19,14 @@ function Bank() {
 
   Bank.prototype.withdrawAmount = function(number) {
     this.balance -= number;
+    this.withdrawals.push(number)
     return "Withdrawal accepted!";
   };
 
   Bank.prototype.getDeposits = function() {
     return this.deposits;
+  }
+
+  Bank.prototype.getWithdrawals = function() {
+    return this.withdrawals;
   }
