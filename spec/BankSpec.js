@@ -37,7 +37,7 @@ describe("Bank", function() {
   it("can display deposits and withdrawals together", function() {
     bank.depositAmount(200);
     bank.withdrawAmount(50);
-    expect(bank.showTransactions()).toEqual([200], [50]);
+    expect(bank.showTransactions()).toEqual([200][50]);
   });
 
 

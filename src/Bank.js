@@ -5,7 +5,7 @@ function Bank() {
   this.balance = this.INITIAL_BALANCE;
   this.deposits = [];
   this.withdrawals = [];
-  this.transactions = [[this.deposits], [this.withdrawals]];
+  this.transactions = [this.deposits][this.withdrawals];
 }
 
   Bank.prototype.getBalance = function() {
