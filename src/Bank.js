@@ -15,13 +15,14 @@ function Bank() {
   Bank.prototype.depositAmount = function(number) {
     this.balance += number;
     this.deposits.push(number)
-    return "Deposit of received!";
+    // return "Deposit received!";
+    return "deposit of " + number + " received";
   };
 
   Bank.prototype.withdrawAmount = function(number) {
     this.balance -= number;
     this.withdrawals.push(number)
-    return "Withdrawal accepted!";
+    return "Withdrawal of " + number + " processed!";
   };
 
   Bank.prototype.getDeposits = function() {
