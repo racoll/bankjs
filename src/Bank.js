@@ -17,7 +17,7 @@ function Bank() {
     this.balance += number;
     this.deposits.push(number)
     // return "Deposit received!";
-    return "deposit of " + number + " received";
+    return "Deposit of " + number + " received";
   };
 
   Bank.prototype.withdrawAmount = function(number) {

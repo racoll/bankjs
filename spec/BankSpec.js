@@ -40,6 +40,10 @@ describe("Bank", function() {
     expect(bank.showTransactions()).toEqual([200][50]);
   });
 
+  // it("can add a time stamp to a deposit", function() {
+  //   expect(bank.depositAmount(100)).toEqual("Deposit of " 100 " received at");
+  // });
+
 
 
 
